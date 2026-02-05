@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New York - DYP Tours & Travels</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #2b2a2a;
+            color: #ffffff;
+        }
+        .destination-header {
+            height: 60vh;
+            background-image: url('https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .gallery-img {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
+        .highlight-card {
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            backdrop-filter: blur(5px);
+        }
+        .back-btn:hover {
+            background: rgba(255,255,255,0.3);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="back-btn">
+        <i class="fas fa-arrow-left"></i> Back to Home
+    </a>
+
+    <div class="destination-header">
+        <div class="overlay">
+            <h1 class="display-2">New York, USA</h1>
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <div class="row mb-5">
+            <div class="col-md-8">
+                <h2>About New York</h2>
+                <p>New York City, the city that never sleeps, is a vibrant metropolis offering world-class entertainment, shopping, dining, and cultural experiences. From Broadway shows to iconic landmarks, NYC has something for everyone.</p>
+                <div class="highlight-card">
+                    <h3>Package Highlights</h3>
+                    <ul>
+                        <li>6 Days / 5 Nights</li>
+                        <li>Empire State Building Observatory</li>
+                        <li>Statue of Liberty & Ellis Island Tour</li>
+                        <li>Broadway Show Experience</li>
+                        <li>Central Park Bike Tour</li>
+                        <li>NYC Food Tour</li>
+                    </ul>
+                    <h4 class="mt-3">Price: From $799 per person</h4>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="highlight-card">
+                    <h3>Best Time to Visit</h3>
+                    <p>April to June (Spring)<br>September to November (Fall)</p>
+                    <h3 class="mt-4">Duration</h3>
+                    <p>6 Days / 5 Nights</p>
+                    <h3 class="mt-4">Includes</h3>
+                    <ul>
+                        <li>Hotel Accommodation</li>
+                        <li>Daily Breakfast</li>
+                        <li>Airport Transfers</li>
+                        <li>City Tours</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="mb-4">Photo Gallery</h2>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <img src="https://images.unsplash.com/photo-1522083165195-3424ed129620" alt="Times Square" class="gallery-img w-100">
+            </div>
+            <div class="col-md-4">
+                <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606" alt="Central Park" class="gallery-img w-100">
+            </div>
+            <div class="col-md-4">
+                <img src="https://images.unsplash.com/photo-1486172950043-71ef1b4e1a2b" alt="Brooklyn Bridge" class="gallery-img w-100">
+            </div>
+            <div class="col-md-4">
+                <img src="https://images.unsplash.com/photo-1569854095063-e1504a24edb0" alt="Statue of Liberty" class="gallery-img w-100">
+            </div>
+            <div class="col-md-4">
+                <img src="https://images.unsplash.com/photo-1534270804882-6b5048b1c1fc" alt="Manhattan Skyline" class="gallery-img w-100">
+            </div>
+            <div class="col-md-4">
+                <img src="https://images.unsplash.com/photo-1552424519-83e0e9f76b42" alt="Broadway" class="gallery-img w-100">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

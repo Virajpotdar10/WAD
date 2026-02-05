@@ -1,0 +1,128 @@
+<!-- Create a webpage using list tags of Html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML List Tags</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        h2 {
+            color: #1c2937;
+            margin-top: 30px;
+        }
+
+        h3 {
+            color: #555;
+        }
+
+        ul {
+            background-color: #ffffff;
+            padding: 15px 30px;
+            border-left: 5px solid #3498db;
+            width: fit-content;
+        }
+
+        ol {
+            background-color: #ffffff;
+            padding: 15px 30px;
+            border-left: 5px solid #2ecc71;
+            width: fit-content;
+        }
+
+        li {
+            margin: 8px 0;
+            font-size: 16px;
+        }
+        ul ul {
+            background-color: #eef6ff;
+            margin-top: 10px;
+            border-left: 4px solid #2980b9;
+        }
+        dl {
+            background-color: #ffffff;
+            padding: 15px;
+            border-left: 5px solid #e67e22;
+            width: fit-content;
+        }
+        dt {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        dd {
+            margin-left: 20px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>HTML List Tags </h1>
+
+    <h2>1. Unordered List</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+    </ul>
+
+    <h2>2. Ordered List</h2>
+    <ol>
+        <li>Understand Requirements</li>
+        <li>Design Web Page</li>
+        <li>Write Code</li>
+        <li>Test Application</li>
+        <li>Deploy Website</li>
+    </ol>
+
+    <h3>Ordered List with Alphabet Type</h3>
+    <ol type="A">
+        <li>Frontend Development</li>
+        <li>Backend Development</li>
+        <li>Database Management</li>
+    </ol>
+
+    <h2>3. Nested List</h2>
+    <ul>
+        <li>Frontend
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </li>
+
+        <li>Backend
+            <ul>
+                <li>Python</li>
+                <li>Node.js</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>4. Description List</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Used to create structure of web pages</dd>
+
+        <dt>CSS</dt>
+        <dd>Used to design and style web pages</dd>
+
+        <dt>JavaScript</dt>
+        <dd>Used to add interactivity to web pages</dd>
+    </dl>
+
+</body>
+</html>
