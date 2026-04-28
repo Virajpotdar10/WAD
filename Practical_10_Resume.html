@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Resume - Viraj Potdar</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #eee;
+}
+
+.container {
+    width: 900px;
+    margin: 20px auto;
+    display: flex;
+    border: 5px solid #7a4dfc;
+}
+
+.left {
+    width: 30%;
+    background: #cfc7c3;
+    padding: 20px;
+}
+
+.profile {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+}
+
+.upload-btn {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.contact {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.contact p {
+    margin: 8px 0;
+}
+
+.section-title {
+    margin-top: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
+
+.right {
+    width: 70%;
+    background: #f4f4f4;
+}
+
+.header {
+    background: #2b1d16;
+    color: white;
+    padding: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h3 {
+    border-bottom: 2px solid gray;
+    padding-bottom: 5px;
+}
+
+.content p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="left">
+
+        <div class="profile">
+            <!-- FIXED IMAGE -->
+            <img id="profileImage" src="your-photo.jpg">
+
+            <input type="file" class="upload-btn" accept="image/*" onchange="loadImage(event)">
+        </div>
+
+        <div class="contact">
+            <p>📧 viraj@email.com</p>
+            <p>📞 9876543210</p>
+            <p>📍 Kolhapur, Maharashtra</p>
+        </div>
+
+        <div class="section-title">EDUCATION</div>
+        <p><b>B.Tech in Computer Engineering</b><br>
+        D.Y. Patil College (2024–2028)</p>
+
+        <p><b>HSC</b><br>
+        Kolhapur (2021–2022)</p>
+
+        <p><b>SSC</b><br>
+        Kolhapur (2019–2020)</p>
+
+        <div class="section-title">SKILLS</div>
+        <ul>
+            <li>HTML, CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+        </ul>
+
+        <div class="section-title">LANGUAGES</div>
+        <ul>
+            <li>C, C++</li>
+            <li>Python</li>
+        </ul>
+
+    </div>
+
+    <div class="right">
+
+        <div class="header">
+            VIRAJ POTDAR
+        </div>
+
+        <div class="content">
+
+            <h3>About Me</h3>
+            <p>
+                I am a Computer Engineering student at D.Y. Patil College.
+                I have interest in web development and software development.
+                I aim to become a full stack developer and build real-world applications.
+            </p>
+
+            <h3>Projects</h3>
+            <ul>
+                <li>Bus Tracking System</li>
+                <li>Fraud Detection System (AI Project)</li>
+            </ul>
+
+            <h3>Extracurricular Activities</h3>
+            <ul>
+                <li>HackerRank Club Member</li>
+                <li>Technical Event Participant</li>
+            </ul>
+
+            <h3>Certifications</h3>
+            <p>Web Development Course Certificate</p>
+
+            <h3>References</h3>
+            <p>Available on request</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function loadImage(event) {
+    const image = document.getElementById('profileImage');
+    image.src = URL.createObjectURL(event.target.files[0]);
+}
+</script>
+
+</body>
+</html>
